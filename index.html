@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hotel White Rock Zirakpur - premium rooms, celebration decor, and dining.">
+  <title>Hotel White Rock | Zirakpur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f8f4ee;--paper:#fffdf8;--ink:#1f1b18;--muted:#5f5850;--brand:#8f1d23;--brand2:#6d1014;--gold:#c8963f;--forest:#25352d;--line:#e4d8c7;--shadow:0 16px 36px rgba(28,22,15,.18);--r:16px;--t:.3s ease}
+    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{font-family:"Manrope","Segoe UI",sans-serif;color:var(--ink);line-height:1.6;background:radial-gradient(1200px 520px at -10% -15%,#f0dfc3 0,transparent 60%),radial-gradient(1200px 520px at 110% 0,#e9ecdf 0,transparent 58%),var(--bg);overflow-x:hidden}
+    img{max-width:100%;display:block}a{text-decoration:none;color:inherit}.w{width:min(1120px,92vw);margin:auto}.sec{padding:clamp(3rem,6vw,5rem) 0}
+    .k{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--brand);font-weight:700}.h{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,4.8vw,3.1rem);line-height:1.04;margin:.6rem 0 .8rem}.p{color:var(--muted);max-width:68ch}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:.78rem 1.25rem;border-radius:999px;font-weight:700;border:1px solid transparent;transition:all var(--t)}
+    .b1{background:linear-gradient(120deg,var(--brand),var(--brand2));color:#fff;box-shadow:0 10px 30px rgba(143,29,35,.35)}.b2{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.08);color:#fff}
+    .b1:hover,.b2:hover{transform:translateY(-2px)}.b2:hover{background:rgba(255,255,255,.2)}
+    .nav{position:fixed;top:.9rem;left:50%;transform:translateX(-50%);width:min(1120px,92vw);display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.74rem 1rem;border-radius:999px;border:1px solid transparent;z-index:50;transition:all var(--t)}
+    .nav.s{background:rgba(255,252,246,.88);border-color:rgba(127,103,76,.24);backdrop-filter:blur(10px);box-shadow:0 12px 35px rgba(35,26,18,.18)}
+    .brand{font-family:"Cormorant Garamond",serif;font-size:clamp(1.3rem,2.7vw,1.9rem);font-weight:700;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.45)}.nav.s .brand{color:var(--brand);text-shadow:none}
+    .links{list-style:none;display:flex;gap:1.2rem;font-size:.95rem;font-weight:600}.links a{color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.45)}.nav.s .links a{color:var(--ink);text-shadow:none}.links a:hover{color:#ffe7bd}
+    .menu{display:none;border:0;background:none;color:#fff;font-weight:700;cursor:pointer}.nav.s .menu{color:var(--brand)}
+    .hero{min-height:100svh;padding:7rem 0 4rem;display:grid;align-items:end;position:relative;isolation:isolate;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:0;z-index:-2;background:url("./WhatsApp Image 2026-03-01 at 7.40.01 PM.jpeg") center 25%/cover no-repeat;transform:scale(1.04)}
+    .hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(115deg,rgba(16,13,10,.86)0,rgba(24,16,11,.58)48%,rgba(24,16,11,.38)100%),linear-gradient(to top,rgba(24,16,11,.92)0,rgba(24,16,11,.16)55%,rgba(24,16,11,.22)100%)}
+    .hero h1{font-family:"Cormorant Garamond",serif;font-size:clamp(2.2rem,7vw,5rem);line-height:.95;margin:.7rem 0 1rem;color:#fff}.hero p{color:#f7efe3;max-width:62ch}
+    .acts{display:flex;flex-wrap:wrap;gap:.85rem;margin:1.3rem 0 1.5rem}.stats{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(120px,1fr));gap:.7rem;max-width:660px}.stats li{padding:.72rem .8rem;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);border-radius:12px;color:#fff5e6}.stats b{display:block;font-size:1.15rem}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;align-items:center}.frame{border:1px solid var(--line);background:var(--paper);padding:.55rem;border-radius:20px;box-shadow:var(--shadow)}.frame img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px}
+    .pts{display:grid;gap:.65rem;margin-top:1.1rem;list-style:none}.pts li{padding:.75rem .85rem;border-left:3px solid var(--gold);background:rgba(255,255,255,.66);border:1px solid var(--line);border-radius:9px;color:#4b4338;font-weight:500}
+    .cards{margin-top:1.2rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);transition:all var(--t)}.card:hover{transform:translateY(-6px)}.card img{width:100%;height:250px;object-fit:cover}
+    .card h3{font-family:"Cormorant Garamond",serif;font-size:1.55rem;color:var(--brand);line-height:1.1}.copy{padding:1rem 1rem 1.2rem;color:var(--muted);font-size:.95rem}
+    .dark{background:linear-gradient(125deg,#1e2a24 0,#5f1f2b 58%,#7b3b22 100%);color:#fff7ea;position:relative;overflow:hidden}.dark .k,.dark .h,.dark .p{color:#fff7ea}.dark .p{color:#fae8cb}
+    .menuwrap{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}.ml{display:grid;gap:.5rem;list-style:none;margin-top:1rem}.ml li{display:flex;justify-content:space-between;gap:1rem;padding:.45rem 0;border-bottom:1px dashed rgba(255,243,223,.35);color:#ffeed2}.ml b{color:#ffd486;white-space:nowrap}
+    .posters{display:grid;gap:.9rem}.posters figure{margin:0;background:rgba(255,255,255,.1);padding:.58rem;border-radius:var(--r);border:1px solid rgba(255,255,255,.3);box-shadow:var(--shadow)}.posters img{border-radius:10px}.posters figcaption{text-align:center;margin-top:.45rem;font-size:.84rem;color:#ffe9c4}
+    .g{margin-top:1.3rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.8rem}.ph{border:0;padding:0;background:#000;border-radius:14px;overflow:hidden;cursor:pointer;position:relative}.ph img{width:100%;height:230px;object-fit:cover;transition:transform .4s ease,opacity .4s}.ph:hover img{transform:scale(1.05);opacity:.93}.ph:after{content:"Tap to view";position:absolute;inset:auto 0 0;padding:.4rem .55rem;font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.62),rgba(0,0,0,0));opacity:0;transition:opacity var(--t)}.ph:hover:after{opacity:1}
+    .contact{display:grid;grid-template-columns:1.05fr .95fr;gap:1rem}.info{background:var(--forest);color:#fef7ea;border-radius:20px;padding:1.25rem;border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow)}.info h3{font-family:"Cormorant Garamond",serif;font-size:clamp(1.65rem,3vw,2.2rem);line-height:1.1;margin-bottom:.7rem}.info p{color:#f4ebdd}
+    .meta{list-style:none;display:grid;gap:.6rem;margin-top:.9rem}.meta li{padding-bottom:.62rem;border-bottom:1px dashed rgba(255,255,255,.2)}.meta b{display:block;color:#ffd897;font-size:.84rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.12rem}
+    .quickbox{background:var(--paper);border-radius:20px;border:1px solid var(--line);padding:1.1rem;box-shadow:var(--shadow)}.quickbox h3{font-family:"Cormorant Garamond",serif;font-size:clamp(1.6rem,2.8vw,2rem);color:var(--brand)}.quickbox p{color:var(--muted);margin:.25rem 0 .9rem}
+    .qa{display:grid;gap:.65rem}.qa .btn{width:100%;justify-content:center}
+    .mini{margin-top:.9rem;display:grid;gap:.55rem}
+    .mini div{padding:.62rem .75rem;border:1px dashed var(--line);border-radius:12px;background:#fff;color:#4d473f;font-size:.92rem}
+    footer{padding:1rem 1rem 1.2rem;background:#1c1916;color:#eaddcb;text-align:center;font-size:.9rem;border-top:1px solid rgba(255,255,255,.1)}
+    .lb{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:1rem;background:rgba(3,3,3,.87);opacity:0;pointer-events:none;transition:opacity var(--t)}.lb.on{opacity:1;pointer-events:auto}.lb img{max-width:min(1080px,96vw);max-height:78vh;border-radius:12px;border:2px solid rgba(255,255,255,.82);box-shadow:0 22px 55px rgba(0,0,0,.52)}.cap{margin-top:.7rem;color:#fff6e6;text-align:center}.x{position:absolute;top:1rem;right:1rem;width:2.4rem;height:2.4rem;border-radius:999px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff;font-size:1.35rem;cursor:pointer}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .72s ease,transform .72s ease}.reveal.show{opacity:1;transform:none}
+    @media(max-width:980px){.split,.menuwrap,.contact{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}
+    @media(max-width:760px){.menu{display:block}.links{position:absolute;left:0;right:0;top:calc(100% + .45rem);flex-direction:column;align-items:flex-start;gap:0;background:rgba(255,252,246,.98);border:1px solid rgba(127,103,76,.24);border-radius:16px;box-shadow:var(--shadow);max-height:0;overflow:hidden;transition:max-height var(--t),padding var(--t)}.links.open{max-height:320px;padding:.35rem 0}.links li{width:100%}.links a{display:block;width:100%;color:var(--ink)!important;text-shadow:none;padding:.78rem 1rem}.hero{padding-top:6rem}.stats{grid-template-columns:1fr}.acts .btn{width:100%}}
+  </style>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a class="brand" href="#home">Hotel White Rock</a>
+    <button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <ul class="links" id="links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#dining">Dining</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="w reveal">
+      <p class="k" style="color:#ffe6bc">Zirakpur | Kalka-Shimla Highway</p>
+      <h1>Rest Well. Celebrate Better.</h1>
+      <p>Hotel White Rock blends modern comfort with warm hospitality, offering cozy rooms, celebration setups, and in-house dining for travelers, families, and couples.</p>
+      <div class="acts">
+        <a class="btn b1" href="tel:+917717610686">Call for Booking</a>
+        <a class="btn b2" href="#dining">View Menu</a>
+      </div>
+      <ul class="stats">
+        <li><b>24/7</b>Front Desk Support</li>
+        <li><b>8+</b>Real Hotel Photos Used</li>
+        <li><b>Prime</b>Highway Location</li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="sec reveal" id="about">
+      <div class="w split">
+        <div>
+          <span class="k">Welcome</span>
+          <h2 class="h">Comfort focused stays at Hotel White Rock</h2>
+          <p class="p">Located at SCO 3/4, Shri Ganesh Shopping Complex near Aashirwad Banquet Hall, our hotel is ideal for short stays, business visits, and celebration nights.</p>
+          <ul class="pts">
+            <li>Clean, modern rooms with AC, TV, and attached washroom</li>
+            <li>Special romantic and event decor available on request</li>
+            <li>In-house kitchen with veg, non-veg, snacks, and breakfast</li>
+          </ul>
+        </div>
+        <figure class="frame"><img src="./WhatsApp Image 2026-03-01 at 7.39.18 PM (1).jpeg" alt="Spacious premium room with king bed and seating" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="sec reveal" id="rooms">
+      <div class="w">
+        <span class="k">Stay</span>
+        <h2 class="h">Rooms designed for comfort and occasion</h2>
+        <p class="p">From clean everyday rooms to celebration-ready setups, every space is prepared for a relaxed and memorable stay.</p>
+        <div class="cards">
+          <article class="card">
+            <img src="./WhatsApp Image 2026-03-01 at 7.39.17 PM.jpeg" alt="Decorated room with red and white balloons" loading="lazy" decoding="async">
+            <div class="copy"><h3>Celebration Suite Setup</h3><p>Balloon decor, mood lighting, and thoughtful styling for birthdays, anniversaries, and surprise stays.</p></div>
+          </article>
+          <article class="card">
+            <img src="./WhatsApp Image 2026-03-01 at 7.39.09 PM (1).jpeg" alt="Romantic decorated room with heart balloons" loading="lazy" decoding="async">
+            <div class="copy"><h3>Romantic Decor Room</h3><p>A cozy private room with themed decoration and tidy interiors for special couple experiences.</p></div>
+          </article>
+          <article class="card">
+            <img src="./WhatsApp Image 2026-03-01 at 7.39.18 PM.jpeg" alt="Clean decorated room with balloons and king bed" loading="lazy" decoding="async">
+            <div class="copy"><h3>Comfort Plus Room</h3><p>Well-maintained room featuring a large bed, smart storage, and a fresh setup for restful nights.</p></div>
+          </article>
+          <article class="card">
+            <img src="./WhatsApp Image 2026-03-01 at 7.39.19 PM.jpeg" alt="Neat room interior with TV panel and attached washroom" loading="lazy" decoding="async">
+            <div class="copy"><h3>Classic Stay Room</h3><p>Functional and comfortable option with sitting area, TV unit, and attached bathroom access.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec dark reveal" id="dining">
+      <div class="w menuwrap">
+        <div>
+          <span class="k">Dining</span>
+          <h2 class="h">Freshly prepared menu with broad choices</h2>
+          <p class="p">Our kitchen serves North Indian favorites, Chinese snacks, breakfast plates, biryani, and beverages for room service and dine-in guests.</p>
+          <ul class="ml">
+            <li><span>Shahi Paneer / Kadhai Paneer</span><b>From &#8377;250</b></li>
+            <li><span>Butter Chicken / Chilli Chicken</span><b>From &#8377;350</b></li>
+            <li><span>Momos, Spring Roll, Noodles</span><b>From &#8377;120</b></li>
+            <li><span>Plain to Paneer Parantha</span><b>From &#8377;70</b></li>
+            <li><span>Masala Dosa / Idli Sambar</span><b>From &#8377;120</b></li>
+          </ul>
+          <p style="margin-top:1rem;color:#ffecd0">For latest availability and room + meal combos, call our front desk directly.</p>
+          <a class="btn b2" href="tel:+918968168551" style="margin-top:.8rem">Call Dining Desk</a>
+        </div>
+        <div class="posters">
+          <figure>
+            <img src="./67304614-a019-4660-a7b8-bf5c9f2f29b8.jpg" alt="Hotel White Rock menu poster page 1" loading="lazy" decoding="async">
+            <figcaption>Menu Sheet - Page 1</figcaption>
+          </figure>
+          <figure>
+            <img src="./bab63d84-5376-458b-bf93-f2e5e0af6f02.jpg" alt="Hotel White Rock menu poster page 2" loading="lazy" decoding="async">
+            <figcaption>Menu Sheet - Page 2</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec reveal" id="gallery">
+      <div class="w">
+        <span class="k">Gallery</span>
+        <h2 class="h">A full visual walkthrough of the property</h2>
+        <p class="p">Tap any image to preview it. This gallery includes all images present in this folder.</p>
+        <div class="g">
+          <button class="ph" type="button"><img src="./WhatsApp Image 2026-03-01 at 7.40.01 PM.jpeg" alt="Hotel White Rock exterior at night" loading="lazy" decoding="async"></button>
+          <button class="ph" type="button"><img src="./WhatsApp Image 2026-03-01 at 7.39.18 PM (1).jpeg" alt="Premium room with king bed and wooden furniture" loading="lazy" decoding="async"></button>
+          <button class="ph" type="button"><img src="./WhatsApp Image 2026-03-01 at 7.39.17 PM.jpeg" alt="Room decorated with balloons and warm lights" loading="lazy" decoding="async"></button>
+          <button class="ph" type="button"><img src="./WhatsApp Image 2026-03-01 at 7.39.09 PM (1).jpeg" alt="Decorated room with heart theme balloons" loading="lazy" decoding="async"></button>
+          <button class="ph" type="button"><img src="./WhatsApp Image 2026-03-01 at 7.39.18 PM.jpeg" alt="Balloon themed room decor setup" loading="lazy" decoding="async"></button>
+          <button class="ph" type="button"><img src="./WhatsApp Image 2026-03-01 at 7.39.19 PM.jpeg" alt="Room interior with TV panel and attached washroom door" loading="lazy" decoding="async"></button>
+          <button class="ph" type="button"><img src="./67304614-a019-4660-a7b8-bf5c9f2f29b8.jpg" alt="Hotel menu poster with veg, roti, naan, and salad list" loading="lazy" decoding="async"></button>
+          <button class="ph" type="button"><img src="./bab63d84-5376-458b-bf93-f2e5e0af6f02.jpg" alt="Hotel menu poster with non veg, rice, breakfast, and snacks list" loading="lazy" decoding="async"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec reveal" id="contact">
+      <div class="w contact">
+        <article class="info">
+          <h3>Book your stay at Hotel White Rock</h3>
+          <p>Reach us directly for room availability, celebration setups, and meal preferences.</p>
+          <ul class="meta">
+            <li><b>Address</b>SCO 3/4, Shri Ganesh Shopping Complex, Near Aashirwad Banquet Hall, Kalka-Shimla Highway, Zirakpur (PB)</li>
+            <li><b>Phone</b>+91 77176 10686, +91 89681 68551</li>
+            <li><b>Email</b>Hotelwhiterock57@gmail.com</li>
+            <li><b>Reception</b>Open 24/7 for check-in and assistance</li>
+          </ul>
+        </article>
+        <aside class="quickbox">
+          <h3>Quick Booking</h3>
+          <p>No query form. Book directly for fastest confirmation.</p>
+          <div class="qa">
+            <a class="btn b1" href="tel:+917717610686">Call +91 77176 10686</a>
+            <a class="btn b1" href="tel:+918968168551">Call +91 89681 68551</a>
+            <a class="btn b2" href="https://wa.me/917717610686" target="_blank" rel="noopener">WhatsApp Booking</a>
+            <a class="btn b2" href="https://maps.google.com/?q=Hotel%20White%20Rock%20Zirakpur" target="_blank" rel="noopener">Open Location</a>
+          </div>
+          <div class="mini">
+            <div><strong>Express Check-in:</strong> Share your name and arrival time on call.</div>
+            <div><strong>Special Setup:</strong> Balloon and celebration decor available on request.</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; <span id="y"></span> Hotel White Rock Zirakpur. All rights reserved.</footer>
+
+  <div class="lb" id="lb" aria-hidden="true">
+    <button class="x" id="x" aria-label="Close image">x</button>
+    <div>
+      <img id="li" src="" alt="Expanded gallery view">
+      <p class="cap" id="cap"></p>
+    </div>
+  </div>
+
+  <script>
+    const nav=document.getElementById("nav"),menu=document.getElementById("menu"),links=document.getElementById("links");
+    const navState=()=>nav.classList.toggle("s",window.scrollY>20);navState();window.addEventListener("scroll",navState,{passive:true});
+    menu.addEventListener("click",()=>{const e=menu.getAttribute("aria-expanded")==="true";menu.setAttribute("aria-expanded",String(!e));links.classList.toggle("open")});
+    links.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{links.classList.remove("open");menu.setAttribute("aria-expanded","false")}));
+    const io=new IntersectionObserver((entries,o)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");o.unobserve(e.target)}}),{threshold:.16});
+    document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+    document.getElementById("y").textContent=new Date().getFullYear();
+    const lb=document.getElementById("lb"),li=document.getElementById("li"),cap=document.getElementById("cap"),x=document.getElementById("x");
+    const open=(s,a)=>{li.src=s;cap.textContent=a;lb.classList.add("on");lb.setAttribute("aria-hidden","false");document.body.style.overflow="hidden"};
+    const close=()=>{lb.classList.remove("on");lb.setAttribute("aria-hidden","true");li.src="";document.body.style.overflow=""};
+    document.querySelectorAll(".ph").forEach(b=>b.addEventListener("click",()=>{const i=b.querySelector("img");open(i.getAttribute("src"),i.getAttribute("alt"))}));
+    x.addEventListener("click",close);lb.addEventListener("click",e=>{if(e.target===lb)close()});
+    document.addEventListener("keydown",e=>{if(e.key==="Escape"&&lb.classList.contains("on"))close()});
+  </script>
+</body>
+</html>
